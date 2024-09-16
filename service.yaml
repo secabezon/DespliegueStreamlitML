@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: servicio-api-datapath-edicion8
+spec:
+  template:
+    spec:
+      containers:
+        - image: us-central1-docker.pkg.dev/datapathdeployfastapi/repo-servicio-prediccion-datapath/image-v12-servicio-prediccion-datapath:latest
+          env:
+          ports:
+            - containerPort: 8501

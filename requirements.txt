@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+debugpy
+pandas
+streamlit
+matplotlib
+feature_engine
+joblib

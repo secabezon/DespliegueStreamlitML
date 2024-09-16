@@ -1,0 +1,24 @@
+{
+    "name": "Python-FastAPI-Devcontainer",
+    "build": {
+      "dockerfile": "../Dockerfile.dev"
+    },
+    "customizations": {
+      "vscode": {
+          "extensions": [
+              "ms-python.python",
+              "ms-python.vscode-pylance",
+              "ms-python.black-formatter",
+              "ms-python.debugpy",
+              "ms-azuretools.vscode-docker"
+          ],
+          "settings": {}
+      }
+    },
+    "forwardPorts": [
+      "5678:5678"
+    ],
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/code,type=bind,consistency=delegated",
+    "workspaceFolder": "/workspace/code",
+    "runArgs": []
+}
